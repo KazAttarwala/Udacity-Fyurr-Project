@@ -6,9 +6,6 @@
 		<h1 class="monospace">
 			{{ artist.name }}
 		</h1>
-		<p class="subtitle">
-			ID: {{ artist.id }}
-		</p>
 		<div class="genres">
 			{% for genre in artist.genres %}
 			<span class="genre">{{ genre }}</span>
@@ -42,7 +39,7 @@
 		{% endif %}
 	</div>
 	<div class="col-sm-6">
-		<img src="{{ artist.image_link }}" alt="Venue Image" />
+		<img src="{{ artist.image_link }}" alt="Artist Image" />
 	</div>
 </div>
 <section>
